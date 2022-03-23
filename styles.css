@@ -17,3 +17,119 @@ html {
     --just-white: #FFFFFF;
     
 }
+header nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70px;
+
+}
+header nav img {
+    
+justify-self: left;
+margin-top: 10px;
+margin-left: 10px;
+height: 60px;
+width: auto;
+
+}
+header nav div {
+margin-left: 25px;
+margin-top: 10px;
+}
+header nav div input {
+    width: auto;
+    height: 20px;
+    font-size: smaller;
+    padding: 0 2px;
+    border: 0.2px solid var(--blue-logo);
+    border-radius: 3px;
+    background-color: var(--blue-logo);
+    color: var(--off-white);
+    
+}
+main h1{
+    background-color: #0A2233;
+    color: var(--off-white);
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.sentence-salary{
+    margin-top: 10px;
+}
+.sentence-time {
+    margin-top: 10px;
+}
+main .input-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    width: 280px;
+    margin-left: calc(50% - 140px);
+    border: 0.1px solid var(--grey);
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 1px rgba(20, 3, 58, 0.2);
+    text-align: left;
+    font-size: medium;
+    
+}
+main .input-data .input-salary {
+    text-align: center;
+    color: var(--grey);
+    font-size: smaller;
+    border: 0.2px transparent --soft-grey;
+}
+main .input-data .input-time {
+    text-align: center;
+    color: var(--grey);
+    font-size: smaller;
+    border: 0.2px transparent --soft-grey;
+}
+.button-calculate button{
+    background-color: var(--blue-logo);
+    color: var(--just-white);
+    font-size: medium;
+    margin-top: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifz;
+    margin-left: 200px;
+    padding: 3px;
+}
+.output-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    width: 280px;
+    margin-left: calc(50% - 140px);
+    border: 0.1px solid var(--grey);
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 1px rgba(20, 3, 58, 0.2);
+    text-align: center;
+    font-size: smaller;
+    
+}
+/*Para pantallas más amplias*/
+@media(min-width:440px) {
+    header nav div {
+        margin-left: 100px;
+        margin-top: 10px;
+        }
+}
+@media(min-width:540px) {
+    header nav div {
+        margin-left: 200px;
+        margin-top: 10px;
+        }
+}
+@media(min-width:640px) {
+    header nav div {
+        margin-left: 300px;
+        margin-top: 10px;
+        }
+}

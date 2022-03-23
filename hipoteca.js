@@ -33,10 +33,10 @@ const validaAños = function (){
         const cuota= (valorPrestamo*0.008051)/(1- Math.pow((1+ 0.008051), -validaAño));
         
         const años = document.getElementById("años");
-    años.innerText = "la Cuota mensual es de $ " + Math.floor(cuota) + " mil pesos";
+    años.innerText = "La Cuota mensual es de $ " + Math.floor(cuota) + " mil pesos";
     
         const resultado = document.getElementById("resultado");
-    resultado.innerText = "tu prestamo es de $ " + Math.floor(valorPrestamo) + " millones";
+    resultado.innerText = "Tu prestamo es de $ " + Math.floor(valorPrestamo) + " millones";
     
     const legal = document.getElementById("legales");
     legal.innerText = "La tasa de interés usada para el cálculo es un promedio de referencia.";

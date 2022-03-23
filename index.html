@@ -15,9 +15,11 @@
     <header>
         <nav>
             <img src="./assets/Logo.svg" alt="">
-            <input type="button" value="Login">
-            <input type="button" value="Contact us">
-            <input type="button" value="About us">
+            <div>
+                <input type="button" value="Login">
+                <input type="button" value="Contact us">
+                <input class="about" type="button" value="About us">
+            </div>
         </nav>
     </header>
 
@@ -40,19 +42,25 @@
                     <option value="20" >20 años</option>
                     <option value="25">25 años</option>
                 </select>
-                <button class="calculate-button" type="button" onclick=" calcularCuotaMensual()">Calcular</button>
+                <div class="button-calculate">
+
+                    <button class="calculate-button" type="button" onclick=" calcularCuotaMensual()">Calcular</button>
+                </div>
                 
 
             </form>
-            <div class="output-result">
-                <p id="resultado"></p>
-                <p id="años"></p>
-                <p id="legales"></p>
-                <p id="valorInmobiliario"></p>
-            </div>
+            
+         </div>
+
          
-        </div>
     </main>
+    <div class="output-result">
+        <p id="resultado"></p>
+        <p id="valorInmobiliario"></p>
+        <p id="años"></p>
+        <p id="legales"></p>
+        
+    </div>
     
     <script src="./hipoteca.js"></script>
 </body>
