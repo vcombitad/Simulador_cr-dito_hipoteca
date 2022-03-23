@@ -22,29 +22,29 @@
     </header>
 
     <main>
-        <div>
+        <div class="main-title">
             <h1>Cálcula tu préstamo hipotecario</h1>
         </div>
 
-        <div>
+        <div class="input-data">
             <form action="">
-                <p>Ingresa tu salario mensual </p>
+                <p class="sentence-salary">Ingresa tu salario mensual </p>
                 <label for="salario"></label>
-                <input id="salario" type="number" placeholder=" $ pesos Colombianos">
+                <input class="input-salary" id="salario" type="number" placeholder=" $ pesos Colombianos">
                 
-                <p>Escoge el periodo de pago</p>
+                <p class="sentence-time">Escoge el periodo de pago</p>
                 <label for="periodo"></label>
-                <select name="plazo" id="periodo">
+                <select class="input-time" name="plazo" id="periodo">
                     <option value="10">10 años</option>
                     <option value="15">15 años</option>
                     <option value="20" >20 años</option>
                     <option value="25">25 años</option>
                 </select>
-                <button type="button" onclick=" calcularCuotaMensual()">Calcular</button>
+                <button class="calculate-button" type="button" onclick=" calcularCuotaMensual()">Calcular</button>
                 
 
             </form>
-            <div>
+            <div class="output-result">
                 <p id="resultado"></p>
                 <p id="años"></p>
                 <p id="legales"></p>
